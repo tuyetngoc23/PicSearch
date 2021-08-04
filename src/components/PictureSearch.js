@@ -59,7 +59,7 @@ class PictureSearch extends Component {
                 <div className="ui four column grid container">
                     
                     {
-                        this.state.length > 0 && this.state.results.map((item) => {
+                        this.state.results.length > 0 && this.state.results.map((item) => 
                             <div key={item.id} className="column">
                                 <div className="ui card">
                                     <div className="image">
@@ -67,10 +67,10 @@ class PictureSearch extends Component {
                                     </div>
                                 </div>
                             </div>
-                        })
+                        )
 
                     }
-                    {this.state.length < 0 && <h3>No image</h3>}
+                    {this.state.resultslength < 0 && <h3>No image</h3>}
                 </div>
             </div>
 
